@@ -1,0 +1,87 @@
+<div *ngIf="showSpinner" class="spin">
+  <div class="loader"></div>
+  <div>Logging ...</div>
+</div>
+<div *ngIf="!showSpinner" class="card">
+  <div  class="cardContent">
+    <div class="title">
+      <h3>Hello User</h3>
+      <div class="titleUnder"></div>
+    </div>
+
+    <div class="form">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="form-group field">
+          <label style="margin-bottom:5px; font-weight:600;" for="usr"
+            >Username/Email :</label
+          >
+          <input
+            style=" border: 2px #89CFF0 solid;
+            border-radius: 5px;"
+            type="text"
+            id="usr"
+            class="form-control"
+            formControlName="username"
+          />
+        </div>
+        <div class="form-group field" style="margin-top:20px;">
+          <label style="margin-bottom:5px; font-weight:600;" for="pwd"
+            >Password :</label
+          >
+          <input
+            style=" border: 2px #89CFF0 solid;
+          border-radius: 5px;"
+            type="text"
+            id="pwd"
+            class="form-control"
+            formControlName="password"
+          />
+        </div>
+        <br>
+        <div class="errBlock">
+          <div class="error">{{userNotFound}}</div>
+          <div
+            *ngIf="
+              (loginForm.controls.username.touched || submitted) &&
+              loginForm.controls.username.errors?.required
+            "
+            class="error"
+          >
+            * Username is required
+          </div>
+          <div
+            *ngIf="
+              (loginForm.controls.password.touched || submitted) &&
+              loginForm.controls.password.errors?.required
+            "
+            class="error"
+          >
+            * Password is required
+          </div>
+          <div
+            *ngIf="
+              loginForm.controls.username.dirty &&
+              loginForm.controls.username.errors?.invalid
+            "
+          >
+            <span>* Username should be of length 6 </span> <br />
+            <span> &nbsp; &nbsp;and containes no digit.</span>
+          </div>
+          <div
+            *ngIf="
+              loginForm.controls.password.dirty &&
+              loginForm.controls.password.errors?.invalid
+            "
+          >
+            <span>* Password should have min</span> <br />
+            <span> &nbsp; &nbsp; 1 upper, 1 lower and a </span> <br />
+            <span> &nbsp; &nbsp;digit. Total length >= 8.</span>
+          </div>
+        </div>
+        <div class="btn">
+          <button class="loginBtn">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

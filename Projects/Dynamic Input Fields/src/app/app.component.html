@@ -1,0 +1,19 @@
+<form [formGroup]="form">
+  <div class="first">
+    <input class="input" formControlName="first" />
+    <button class="btn" (click)="add()">Add</button>
+  </div>
+
+  <div formArrayName="inputList">
+    <div *ngFor="let val of addInputField.controls; let i = index">
+      <div class="form-container" [formGroup]="val">
+        <div  class="first">
+          <input class="input" formControlName="input" />
+          <button class="btn" (click)="add()">Add</button>
+          <button class="remove" type="button" (click)="remove(i)">Remove</button>
+        </div>
+      </div>
+      <hr />
+    </div>
+  </div>
+</form>

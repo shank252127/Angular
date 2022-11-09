@@ -1,0 +1,69 @@
+<div class="container">
+  <header class="header">
+    <p class="logo">Home</p>
+    <nav>
+      <ul class="navLink">
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1xMecvjIHTM7ngsnuyvDGE_Cmx_f4wiaB/view?usp=sharing"
+            target="_blank"
+            >Resume</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/shank252127" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/shashank-singh-100470218/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <a class="btn"><button (click)="logout()">Sign Out!!!</button></a>
+  </header>
+  <div *ngIf="showSpinner" class="spin">
+    <div class="loader"></div>
+    <div>Loading Data ...</div>
+  </div>
+  <main *ngIf="!showSpinner" class="card">
+    <section class="cardContent">
+      <section class="logo">
+        <img
+          src="https://drive.google.com/uc?export=view&id=1hvRAGrdq0SqFBZApx2--IcuDf-DOmOBH"
+          alt=""
+        />
+      </section>
+      <section class="title">
+        <div class="hi">Hello !!!</div>
+
+        <div class="titleUnder"></div>
+      </section>
+      <section class="form">
+        <h3>Welcome to Wissen Coding Challenge!</h3>
+        <div class="details">
+          <span>Your login details:</span>
+          <span
+            >Username: <b>{{ user }}</b>
+          </span>
+          <span style="margin-top:3px; color:red; text-align:center;">
+            ** I didn't recieved the user details. So, displayoing only email.
+            **</span
+          >
+        </div>
+      </section>
+    </section>
+    <section class="btn">
+      <button class="loginBtn" (click)="getAllUser()">Get All Users</button>
+      <div class="user" *ngIf="showAllUser">
+        <span> Here are all Users: </span>
+        <ul *ngFor="let i of allUser">
+          <li>{{ i }}</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</div>

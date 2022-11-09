@@ -1,0 +1,137 @@
+.error-label {
+  color: red;
+}
+
+.spin {
+  margin: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+
+  margin: 6rem auto 8.1rem auto;
+  width: 329px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContent {
+  padding: 12px 44px;
+}
+
+.title {
+  font-family: 'Raleway Thin', sans-serif;
+  letter-spacing: 4px;
+  padding-bottom: 23px;
+  padding-top: 13px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.titleUnder {
+  background: blue;
+  height: 2px;
+  margin: -1.1rem auto 0 auto;
+  width: 140px;
+}
+
+/* Form */
+label {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 11pt;
+}
+.form {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.int {
+  border: 2px red solid;
+  border-radius: 5px;
+}
+/* Login Button */
+.loginBtn {
+  background: blue;
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #7cb9e8;
+  cursor: pointer;
+  color: white;
+  font-family: 'Raleway SemiBold', sans-serif;
+  height: 42.3px;
+  margin: 0 auto;
+  margin-top: 50px;
+  transition: 0.25s;
+  width: 153px;
+}
+
+.loginBtn:hover {
+  box-shadow: 0px 1px 18px #5072a7;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Error */
+.errBlock {
+  width: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: small;
+  color: red;
+}
+
+/* spinner */
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
