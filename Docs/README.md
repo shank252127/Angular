@@ -1,5 +1,5 @@
 # Contents of Folder #
-Here you can find docs and material explaining some concepts of Angular.
+Here you can find docs and materials explaining some advanced concepts of Angular and its application.
 
 ### Docs are : ###
 1.
