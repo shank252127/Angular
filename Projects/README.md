@@ -3,10 +3,10 @@ Here you can find projects based on important topic of the Angular like NgRx, Rx
 
 ### Projects are : ###
 
-1. __Custom Pipe__
-2. __Custom Directive__
-3. __Manual Authentication__
-4. __Dynamic Input Field__
+1.  __Custom Directive__
+2.  __Custom Pipe__
+3.  __Dynamic Input Field__ 
+4.  __Manual Authentication__
 
 Connect with me :blush: : </br>
 &nbsp; :email: singh.shashank2798@gmail.com </br>
