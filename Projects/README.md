@@ -7,6 +7,7 @@ Here you can find projects based on important topic of the Angular like NgRx, Rx
 2.  __Custom Pipe__
 3.  __Dynamic Input Field__ 
 4.  __Manual Authentication__
+5.  __To Do App__
 
 Connect with me :blush: : </br>
 &nbsp; :email: singh.shashank2798@gmail.com </br>
