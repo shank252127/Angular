@@ -1,2 +1,13 @@
-# Angular
- This repository contains Study Material, Docs and Project based on Angula. Here you can find projects based on important topic of the Angular like NgRx, RxJs, Pipe, Authentication, Directive etc...
+# Contents of Folder #
+Here you can find docs and materials explaining some advanced concepts of Angular and its application.
+
+### Docs are : ###
+1.
+2.
+3.
+
+
+
+Connect with me :blush: : </br>
+&nbsp; :email: singh.shashank2798@gmail.com </br>
+&nbsp; :raising_hand: https://www.linkedin.com/in/shashank-singh-100470218/
