@@ -5,10 +5,11 @@
 
 __Projects__  | __Docs__
 ------------- | -------------
-Custom Pipe  | 
 Custom Directive  | 
-Manual Authentication App  | 
+Custom Pipe  | 
 Dynamic Input Field  | 
+Manual Authentication App  | 
+
 
 
 
